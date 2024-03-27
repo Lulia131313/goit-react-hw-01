@@ -1,13 +1,14 @@
 .profile {
   border: 3px solid #000;
   border-radius: 10px;
-  padding: 20px;
+
   width: 300px;
   margin: 20px auto;
   text-align: center;
+  overflow: hidden;
 }
 .description {
-  margin-bottom: 20px;
+  padding-top: 20px;
 }
 .avatar {
   border-radius: 50%;
@@ -19,8 +20,9 @@
 .stats {
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid #000;
-  padding-top: 20px;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(194, 194, 194);
 }
 
 .avatar {
@@ -34,14 +36,6 @@
   margin: 10px 0px;
   color: gray;
 }
-.stat-item {
-  flex: 1;
-  border-right: 1px solid #ccc;
-}
-
-.stat-item:last-child {
-  border-right: none;
-}
 
 .label {
   font-weight: bold;
@@ -49,4 +43,11 @@
 
 .quantity {
   display: block;
+  margin-top: 10px;
+}
+.stat {
+  width: calc(100% / 3);
+  border: 1px solid gray;
+  list-style: none;
+  padding: 20px;
 }
